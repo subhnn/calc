@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+      .title{
+      margin-bottom: 10px;
+      text-align:center;
+      width: 210px;
+      color:green;
+      border: solid black 2px;
+      }
+
+      input[type="button"]
+      {
+      background-color:gray;
+      color: black;
+      border: solid black 2px;
+      width:100%
+      }
+
+      input[type="text"]
+      {
+      background-color:white;
+      border: solid black 2px;
+      width:100%
+      }
+   </style>
 </head>
 <body>
    
@@ -15,8 +39,8 @@
       <table id="t1">
          <tr>
             <td colspan="3"><input type="text" id="result"/></td>
-            
-            <td><input type="button" value="c" onclick="clr()"/> </td>
+            <td><input type="button" value="<" onclick="backSpace()"/> </td>
+
          </tr>
          <tr>
             
@@ -40,11 +64,11 @@
          <tr>
             <td><input type="button" value="." onclick="displayValue('.')"/> </td>
             <td><input type="button" value="0" onclick="displayValue('0')"/> </td>
-            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="c" onclick="clr()"/> </td>
             <td><input type="button" value="*" onclick="displayValue('*')"/> </td>
 
          </tr>
-         <td><input type="button" value="<" onclick="backSpace()"/> </td>
+         <td colspan="4"><input type="button" value="=" onclick="solve()"/> </td>
 
       </table>
    
